@@ -1,0 +1,169 @@
+/* Repaso de Grid Layout */
+.header {
+    color: white;
+    background-color: rgb(41, 40, 40);
+}
+
+.menu {
+    color: white;
+    background-color: rgb(255, 96, 96);
+}
+
+.hero {
+    color: white;
+    background-color: rgb(125, 101, 206);
+}
+.main {
+    color: white;
+    background-color: rgb(21, 9, 90);
+}
+
+.banner {
+    color: black;
+    background-color: rgb(214, 209, 112);
+}
+.extra {
+    color: black;
+    background-color: rgb(26, 223, 85);
+}
+.image {
+    color: black;
+    background-color: rgb(182, 228, 175);
+}
+
+/* Aplicamos estilos para pantallas como celulares */
+
+@media (min-width: 600px) {
+    .container {
+        font-size: 40px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: stretch;
+    
+        margin: 0 auto;
+    }
+
+    .header {
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }
+
+    .menu {
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .hero {
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+
+    .main {
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .banner{
+        grid-row: 7;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .extra {
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .image {
+        grid-row: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+   }
+
+   /* Aplicamos estilos para pantallas de comutadora */
+   @media (min-width: 1001px) {
+    
+    /* Centra el contenedor que tendra el grid */
+    .container {
+        font-size: 40px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: stretch;
+        
+        width: 1500px;
+        height: 900px;
+        margin: 0 auto;
+    }
+
+    .header {
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }
+
+    .menu {
+        
+        grid-column: 2/5;
+        grid-row: 1;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .hero {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+
+    .main {
+        grid-column: 1/3;
+        grid-row: 3 / span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .banner{
+        grid-column: 1/5;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .extra {
+        grid-column: 3/5;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .image {
+        grid-column: 3/5;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+   }
