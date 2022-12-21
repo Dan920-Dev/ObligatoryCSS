@@ -1,6 +1,6 @@
 .header {
   color: red;
-  background-image: url("/sources/bannerDBZ2.jpeg");
+  background-image: url("./src/bannerDBZ2.jpeg");
   background-repeat: no-repeat;
   background-size: 1800px 300px;
   width: 1800px;
